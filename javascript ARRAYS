@@ -1,0 +1,40 @@
+let removedFruit = fruits.pop(); 
+// BRUGES TIL AT FJERNE SIDSTE ELEMENT
+
+
+
+// BRUGT DYNAMISK TIL AT OPDATERE ARRAYS MED AT PUT ELEMENTER TIL DEM
+fruits.push('orange');
+
+console.log(fruits); 
+
+fruits.push('grape', 'kiwi');
+
+
+
+
+// SLETTER FØRSTE ELEMENT FRA ARRAY
+let removedFruit = fruits.shift();
+
+
+
+// BRUGES TIL AT OPDATERE DYNAMISK ARRAYS MED AT TILFØJE ELEMENTER I BEGYNDELSEN
+fruits.unshift('apple');
+
+console.log(fruits); // Outputs: ['apple', 'banana', 'orange']
+
+fruits.unshift('grape', 'kiwi');
+
+
+
+// BRUGES TIL AT LAVE UNDERSÆT AF ARRAYS UDEN MODIFISERE DE ORIGINALE
+let slicedFruits = fruits.slice(1, 3);
+
+
+
+// BRUGES TIL AT ITERERE OVER ELEMENTER I EN ARRAY OG UDFØRE FUNKTION EN GANGE FOR HVER ELEMENT
+let numbers = [1, 2, 3, 4, 5];
+
+numbers.forEach(function (element) {
+  console.log(element);
+});
